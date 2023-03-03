@@ -1,1 +1,2 @@
 D:\Visual Studio 2022\Projeccts\BSOD\x64\Debug\BSOD.exe
+D:\dev\BSOD\x64\Debug\BSOD.exe
