@@ -1,5 +1,7 @@
 # BSOD
 
+To use you only need the folder BSODExecuter.
+
 This is a simple BSOD that is executed every time you log in to your machine, its created to have fun with it because this doesn't cause any damage to your PC.
 
 Why this BOSD is not warmfull:
