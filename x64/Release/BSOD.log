@@ -1,7 +1,0 @@
-﻿  Main.cpp
-  Generating code
-  2 of 121 functions ( 1.7%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-D:\Projeccts\BSOD\Main.cpp(65): error C4716: 'buyfdeswghuvdefsw': must return a value
-LINK : fatal error LNK1257: code generation failed

@@ -1,2 +1,0 @@
-D:\Visual Studio 2022\Projeccts\BSOD\x64\Release\BSOD.exe
-D:\Projeccts\BSOD\x64\Release\BSOD.exe
